@@ -40,7 +40,7 @@ const Navbar = () => {
                 <ScrollButton target='About' />
                 <ScrollButton target='Project' />
                 <ScrollButton target='Contacts' />
-                <a className="resume" target="_blank" href="https://drive.google.com/file/d/1e-oPZxchRHKfJ5IY7J6aD3vHs4CsJiRO/view">Resume</a>
+                <a className="resume" target="_blank" href="https://drive.google.com/file/d/1hkxMVM6g0PoYNbg7QIkEnrvx33OiTgE1/view?usp=drive_link">Resume</a>
             </div>
             <div className='drawer'>
                 <TemporaryDrawer />

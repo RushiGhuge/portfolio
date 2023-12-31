@@ -63,7 +63,7 @@ export default function TimeLine() {
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '50px', px: 2 }}>
                         <Typography variant="h6" component="span">
-                            Engineering (Electronic and Telecommunication)
+                            Engineering (E&TC)
                         </Typography>
                         <Typography>JSPM's Imperial College of Engineering
                             and Research,</Typography>

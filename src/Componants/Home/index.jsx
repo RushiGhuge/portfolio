@@ -1,6 +1,6 @@
 import './style.css'
-import css from '../../assets/img/css.svg'
-import html from '../../assets/img/html.svg'
+import css from '../../assets/img/CSS3.svg'
+import html from '../../assets/img/HTML.svg'
 import js from '../../assets/img/js.svg'
 import react from '../../assets/img/react.svg'
 import { IconButton } from '@mui/material'
