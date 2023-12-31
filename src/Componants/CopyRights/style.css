@@ -9,7 +9,8 @@
     align-items: center;
 }
 
-.copy-right-section .css-i4bv87-MuiSvgIcon-root {
+.copy-right-section .css-i4bv87-MuiSvgIcon-root,
+.copy-right-section .css-vubbuv {
     color: white !important;
 }
 
