@@ -1,0 +1,27 @@
+.button-sidenav {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
+}
+
+.button {
+    width: 100%;
+}
+
+.button a {
+    display: block;
+}
+
+span {
+    padding-right: 0.4rem;
+}
+a{
+    color: var(--text);
+}
+.close {
+    display: flex;
+    justify-content: end;
+    padding:1rem;
+    cursor: pointer;
+}

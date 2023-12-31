@@ -1,0 +1,60 @@
+.left-nav>h2 {
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background: var(--bg2);
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    z-index: 200;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 3rem;
+    color: var(--text);
+}
+
+.drawer {
+    display: none;
+}
+
+.right-nav {
+    display: flex;
+    font-size: 1.15rem;
+    gap: 20px;
+    align-items: center;
+}
+
+.right-nav>a {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.right-nav a:hover {
+    color: rgb(0, 162, 190);
+    transition: 0.3s;
+}
+
+@media(max-width:800px) {
+    .right-nav {
+        display: none;
+    }
+
+    .drawer {
+        display: block;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:400px) {
+    .navbar {
+        padding: 0.4rem;
+    }
+}

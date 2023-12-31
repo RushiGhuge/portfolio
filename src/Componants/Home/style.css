@@ -1,0 +1,158 @@
+.hero-container-main {
+    background: var(--bg);
+    width: 100%;
+    height: calc(100vh);
+    padding: 0 5rem;
+}
+
+.hero-main {
+    padding-top: 7rem;
+    gap: 130px;
+    display: flex;
+    margin: auto;
+    /* max-width: 80%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 400px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text);
+}
+
+.hero-heading {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text>p {
+    font-size: 1.2rem;
+    color: var(--text2);
+}
+
+.share-icon {
+    font-size: 2rem;
+    display: flex;
+    gap: 5px;
+}
+
+.share-icon a {
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+}
+
+.hero-container-main {
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+.ParaTxtColorDark{
+    color: var(--text);
+}
+
+.hero-img {
+    width: 22rem;
+    height: 22rem;
+    background: #BDB9B6;
+    background-image: url(../../assets/img/Rushi-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid black;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-animation: morfh 7s ease-in-out infinite;
+    filter: grayscale(5%);
+}
+
+
+@-webkit-keyframes morfh {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+.techStack {
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.logos img {
+    width: 45px;
+}
+
+.logos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logos li {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    border-radius: 50%;
+    background: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    color: var(--text);
+}
+
+@media(max-width:800px){
+    .hero-container-main{
+        height: auto;
+        padding: 0 2rem;
+    }
+    .hero-main {
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+    }
+    .hero-heading{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-text{
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:400px){
+    .hero-container-main{
+        padding: 0 1rem;
+    }
+    .hero-img{
+        width: 100%;
+        height: calc(90vw);
+    }
+}

@@ -1,0 +1,27 @@
+/* copyright section at footer  */
+.copy-right-section {
+    background: #2D2E32;
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right-section .css-i4bv87-MuiSvgIcon-root {
+    color: white !important;
+}
+
+
+@media(max-width:600px) {
+    .copy-right-section {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+}

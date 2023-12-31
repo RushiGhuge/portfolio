@@ -1,0 +1,23 @@
+/* projects sections  */
+.projects-container {
+    background: rgba(95, 120, 165, 0.438);
+    background-image: url('https://developer.spotify.com/images/home/mobile-banner-confetti.svg');
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.project-head {
+    width: 900px;
+    margin: 40px auto;  
+    color: var(--text);
+}
+
+@media(max-width:1000px) {
+    .project-head {
+        width: 100%;
+        text-align: center;
+    }
+}

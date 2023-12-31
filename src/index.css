@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+:root {
+  --bg: #f9f9f9;
+  --bg2: #ffffff;
+  --text: #36373b;
+  --text2: #979797;
+}
+
+body[data-theme='light'] {
+  --bg: #f9f9f9;
+  --bg2: #ffffff;
+  --text: #36373b;
+  --text2: #979797;
+}
+
+body[data-theme='dark'] {
+  --bg: rgb(28, 28, 28);
+  --bg2: #141414;
+  --text: #dfdfdf;
+  --text2: #b9b9b9;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* Add some styles to the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--bg);
+  /* You can adjust the width */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Set a background color for the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Change the color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4rem;
+}
+
+/* Style the corners of the scrollbar */
+::-webkit-scrollbar-corner {
+  background: #888;
+  border-radius: 4rem;
+}
