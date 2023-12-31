@@ -18,7 +18,7 @@
     color: var(--text);
 }
 .css-vubbuv{
-    color: green !important;
+    color: var(--text) !important;
 }
 .drawer {
     display: none;
