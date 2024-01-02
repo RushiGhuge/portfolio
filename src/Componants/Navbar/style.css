@@ -17,9 +17,11 @@
     padding: 0 3rem;
     color: var(--text);
 }
-.css-vubbuv{
+
+.css-vubbuv {
     color: var(--text) !important;
 }
+
 .drawer {
     display: none;
 }
@@ -39,6 +41,10 @@
 .right-nav a:hover {
     color: rgb(0, 162, 190);
     transition: 0.3s;
+}
+
+.active {
+  color: red;
 }
 
 @media(max-width:800px) {

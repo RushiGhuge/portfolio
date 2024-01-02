@@ -10,6 +10,7 @@ import TemporaryDrawer from '../Drawer';
 
 const ScrollButton = ({ target }) => (
     <Link
+        activeClass="active"
         to={target}
         spy={true}
         smooth={true}

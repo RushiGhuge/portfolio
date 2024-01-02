@@ -23,13 +23,13 @@ const Home = () => {
                     <motion.p initial={{ y: -300 }} animate={{ y: 0 }} transition={{ type: "spring", stiffness: 100, delay: 0.3 }} className="ParaTxtColorDark">Hi, I'm Rushikesh Ghuge. A
                         passionate Front-end Developer. 📍
                     </motion.p>
-                    <motion.div initial={{ x: 300, opacity:0 }} animate={{ x: 0 , opacity:1}} transition={{ type: "spring", stiffness: 100, delay: 0.6 }} className="share-icon">
+                    <motion.div initial={{ x: 300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, delay: 0.6 }} className="share-icon">
                         <a target="_blank" href="https://www.linkedin.com/in/rushikeshghuge/">
                             <IconButton>
                                 <LinkedInIcon />
                             </IconButton>
                         </a>
-                        <a target="_blank" className="" href="#">
+                        <a target="_blank" className="" href="https://github.com/RushiGhuge">
                             <IconButton>
                                 <GitHubIcon />
                             </IconButton>
@@ -37,12 +37,12 @@ const Home = () => {
                     </motion.div>
                 </div>
 
-                <motion.div initial={{ y: -300, opacity:0 }} animate={{ y: 0, opacity:1 }} transition={{ type: "spring", stiffness: 100, delay: 0.3 }} className="hero-img">
+                <motion.div initial={{ y: -300, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, delay: 0.3 }} className="hero-img">
                 </motion.div>
 
             </div>
 
-            <motion.div  initial={{ y: 300, opacity:0 }} animate={{ y: 0, opacity:1 }} transition={{ type: "spring", stiffness: 100, delay: 0.6 }} className="techStack">
+            <motion.div initial={{ y: 300, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, delay: 0.6 }} className="techStack">
                 <h3 className="ParaTxtColorDark">Tech Stack | </h3>
                 <div className="logos">
                     <ul>

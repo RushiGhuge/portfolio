@@ -53,7 +53,8 @@
     padding-bottom: 50px;
     padding-top: 0px;
 }
-.ParaTxtColorDark{
+
+.ParaTxtColorDark {
     color: var(--text);
 }
 
@@ -122,36 +123,43 @@
     justify-content: center;
 }
 
+
+
+
 .css-i4bv87-MuiSvgIcon-root {
     color: var(--text);
 }
 
-@media(max-width:800px){
-    .hero-container-main{
+@media(max-width:800px) {
+    .hero-container-main {
         height: auto;
         padding: 0 2rem;
     }
+
     .hero-main {
-       display: flex;
-       flex-direction: column;
-       gap: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
-    .hero-heading{
+
+    .hero-heading {
         display: flex;
         justify-content: center;
     }
-    .hero-text{
+
+    .hero-text {
         max-width: 400px;
         width: 100%;
         text-align: center;
     }
 }
 
-@media(max-width:400px){
-    .hero-container-main{
+@media(max-width:400px) {
+    .hero-container-main {
         padding: 0 1rem;
     }
-    .hero-img{
+
+    .hero-img {
         width: 100%;
         height: calc(90vw);
     }
