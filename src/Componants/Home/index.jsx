@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="hero-text">
                     <div className="hero-heading">
                         <motion.h1 initial={{ x: -300 }} animate={{ x: 0 }} transition={{ type: "spring", stiffness: 100 }} id="textColor">
-                            Front-End Developer <span id="hand-shake">🖐️</span>
+                            Front-End Developer <span id="hand-shake">👋</span>
                         </motion.h1>
 
                     </div>

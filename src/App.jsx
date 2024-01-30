@@ -8,12 +8,14 @@ import ProjectContainer from './Componants/ProjectContainer'
 import TimeLine from './Componants/TimeLine'
 
 
+
 function App() {
+
 
   return (
     <main>
       <Navbar />
-      <Home/>
+      <Home />
       <About />
       <TimeLine />
       <ProjectContainer />

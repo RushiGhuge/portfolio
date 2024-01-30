@@ -31,6 +31,7 @@
 .hero-heading {
     display: flex;
     align-items: center;
+    font-weight: 800;
 }
 
 .hero-text>p {
@@ -71,6 +72,7 @@
     -webkit-animation: morfh 7s ease-in-out infinite;
     filter: grayscale(5%);
 }
+
 
 
 @-webkit-keyframes morfh {

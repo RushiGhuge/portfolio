@@ -5,7 +5,7 @@ import weather from '../../assets/project-img/weather.png'
 import airbnb from '../../assets/project-img/airbnb.png'
 import code from '../../assets/project-img/code.png'
 import crypto from '../../assets/project-img/crypto.png'
-
+import incomeExpenceTracker from '../../assets/project-img/tracker (1)-min.png'
 
 
 
@@ -13,13 +13,22 @@ const ProjectContainer = () => {
 
     const projects = [
         {
+            img: incomeExpenceTracker,
+            heading: 'Personal Finance Tracker 💰',
+            des: 'Developed a feature-rich personal finance tracker app with Firebase integration, advanced filtering, and visual analytics (line/pie charts) supporting dark/light mode. Implemented secure authentication and CSV import/export for seamless financial management.',
+            tech: ['React', 'Tailwind', 'Redux'],
+            CodeLink: 'https://github.com/RushiGhuge/personal-finance-tracker',
+            LiveDemoLink: 'https://rushighuge.github.io/personal-finance-tracker/',
+            id: 1,
+        },
+        {
             img: crypto,
             heading: 'CryptoTracker 🪙',
             des: 'Developed a dynamic crypto tracker with real-time data, coin comparison, and local storage-based watchlist. Enhanced user experience includes chart analysis by price, total value, and market cap for comprehensive insights.',
             tech: ['React', 'CSS3'],
             CodeLink: 'https://github.com/RushiGhuge/CryptoTracker',
             LiveDemoLink: 'https://rushighuge.github.io/CryptoTracker/',
-            id: 1,
+            id: 2,
         },
         {
             img: code,
@@ -28,7 +37,7 @@ const ProjectContainer = () => {
             tech: ['React', 'CSS3'],
             CodeLink: 'https://github.com/RushiGhuge/online-code-compiler',
             LiveDemoLink: 'https://rushighuge.github.io/online-code-compiler/',
-            id: 2,
+            id: 3,
         },
         {
             img: youtubeImg,
@@ -37,7 +46,7 @@ const ProjectContainer = () => {
             tech: ['HTML5', 'CSS3', 'Vanilla JS'],
             CodeLink: 'https://github.com/RushiGhuge/YouTube-Clone',
             LiveDemoLink: 'https://rushighuge.github.io/YouTube-Clone/',
-            id: 3,
+            id: 4,
         },
         {
             img: airbnb,
@@ -47,7 +56,7 @@ const ProjectContainer = () => {
             tech: ['HTML5', 'CSS3', 'Vanilla JS'],
             CodeLink: 'https://github.com/RushiGhuge/Airbnb-clone',
             LiveDemoLink: 'https://rushighuge.github.io/Airbnb-clone/',
-            id: 4,
+            id: 5,
         }
         ,
         {
@@ -57,7 +66,7 @@ const ProjectContainer = () => {
             tech: ['HTML5', 'CSS3', 'Vanilla JS'],
             CodeLink: 'https://github.com/RushiGhuge/Major-Projects/tree/main/Weather',
             LiveDemoLink: 'https://rushighuge.github.io/Major-Projects/Weather/',
-            id: 5,
+            id: 6,
         }
     ]
 
