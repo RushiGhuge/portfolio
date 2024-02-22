@@ -41,7 +41,7 @@ const ProjectContainer = () => {
         },
         {
             img: youtubeImg,
-            heading: 'YouTube Clone',
+            heading: 'YouTube Clone ',
             des: 'One of my recent accomplishments is the creation of a dynamic YouTube integration function. This function seamlessly integrates with the YouTube API to enhance user experiences and deliver real-time content.',
             tech: ['HTML5', 'CSS3', 'Vanilla JS'],
             CodeLink: 'https://github.com/RushiGhuge/YouTube-Clone',

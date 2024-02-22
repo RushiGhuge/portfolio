@@ -28,12 +28,12 @@
 
 .right-nav {
     display: flex;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     gap: 20px;
     align-items: center;
 }
 
-.right-nav>a {
+.right-nav a {
     color: var(--text);
     font-weight: 600;
 }
@@ -42,9 +42,14 @@
     color: rgb(0, 162, 190);
     transition: 0.3s;
 }
+.right-nav > button{
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+}
 
 .active {
-  color: red;
+  color: purple;
 }
 
 @media(max-width:800px) {

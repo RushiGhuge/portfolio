@@ -10,6 +10,7 @@ import TemporaryDrawer from '../Drawer';
 
 const ScrollButton = ({ target }) => (
     <Link
+        role='button'
         activeClass="active"
         to={target}
         spy={true}
@@ -37,10 +38,22 @@ const Navbar = () => {
                         {theme === 'light' ? <DarkModeIcon /> : <WbSunnyIcon />}
                     </IconButton>
                 </Tooltip>
-                <ScrollButton target='Home' />
-                <ScrollButton target='About' />
-                <ScrollButton target='Project' />
-                <ScrollButton target='Contacts' />
+                <button>
+                    <ScrollButton target='Home' />
+                </button>
+
+                <button>
+                    <ScrollButton target='About' />
+                </button>
+                
+                <button>
+                    <ScrollButton target='Project' />
+                </button>
+                
+                <button>
+                    <ScrollButton target='Contacts' />
+                </button>
+                
                 <a className="resume" target="_blank" href="https://drive.google.com/file/d/1hkxMVM6g0PoYNbg7QIkEnrvx33OiTgE1/view?usp=drive_link">Resume</a>
             </div>
             <div className='drawer'>

@@ -34,6 +34,11 @@
     font-weight: 800;
 }
 
+.hero-heading h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
 .hero-text>p {
     font-size: 1.2rem;
     color: var(--text2);
@@ -109,20 +114,31 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 1.5rem;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .logos li {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    border-radius: 50%;
-    background: white;
-    width: 70px;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+    gap: 0.5rem;
+
+    &:hover {
+        transform: translateY(-0.6rem);
+    }
+}
+
+
+
+.logos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4rem;
+    background: rgb(255, 255, 255);
+    padding: 0.1rem;
 }
 
 
