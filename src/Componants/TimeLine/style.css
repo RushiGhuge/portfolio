@@ -6,4 +6,5 @@
     justify-content: center;
     background: var(--bg);
     color: var(--text);
+    padding: 4rem 0rem;
 }
