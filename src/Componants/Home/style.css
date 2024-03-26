@@ -3,6 +3,7 @@
     width: 100%;
     height: calc(100vh);
     padding: 0 5rem;
+    position: relative;
 }
 
 .hero-main {
@@ -124,7 +125,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
 
     &:hover {
         transform: translateY(-0.6rem);
@@ -137,7 +138,7 @@
     width: 50px;
     height: 50px;
     border-radius: 0.4rem;
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
     padding: 0.1rem;
 }
 
@@ -148,7 +149,81 @@
     color: var(--text);
 }
 
+/* ---------------------------------------------techLogos-ab-------------- */
+
+.techLogos-ab{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+    top: 5rem;
+    
+}
+
+.techLogos-ab > img{
+    position: absolute;
+    order: random();
+    opacity: 0.5;   
+    z-index: 1; 
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+        scale: 1.2;
+    }
+}
+
+.techLogos-ab > img:nth-child(1){
+    top: 10rem;
+    left: 2rem;
+}
+.techLogos-ab > img:nth-child(2){
+    bottom: 5rem;
+    left: 3rem;
+}
+
+.techLogos-ab > img:nth-child(3){
+    bottom: 20rem;
+    right: 2rem;
+}
+
+.techLogos-ab > img:nth-child(4){
+    bottom: 16rem;
+    left: 7rem;
+}
+
+.techLogos-ab > img:nth-child(5){
+    bottom: 6rem;
+    right: 10rem;
+}
+
+.techLogos-ab > img:nth-child(6){
+    top: 17rem;
+    left:50% ;
+}
+
+.techLogos-ab > img:nth-child(7){
+    bottom: 13rem;
+    left:40% ;
+}
+
+.techLogos-ab > img:nth-child(8){
+    bottom: 10rem;
+    left:10rem ;
+}
+
+/* -----END----------------------------------------techLogos-ab-------------- */
+
+
 @media(max-width:800px) {
+
+    .techLogos-ab{
+        display: none;
+    }
+
     .hero-container-main {
         height: auto;
         padding: 0 2rem;
