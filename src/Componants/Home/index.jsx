@@ -5,8 +5,6 @@ import js from "../../assets/img/js.svg";
 import ts from "../../assets/img/typescript.svg";
 import react from "../../assets/img/react.svg";
 import node from "../../assets/img/node-js.svg";
-import nextJs from "../../assets/img/nextjs.svg";
-import mongo from "../../assets/img/mongo-db-64.png";
 import tailwind from "../../assets/img/tailwind-css.svg";
 import sass from "../../assets/img/sass.svg";
 import angular from "../../assets/img/icons8-angular.svg";
@@ -14,6 +12,7 @@ import { IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
+import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -48,6 +47,7 @@ const Home = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/rushikeshghuge/"
+              rel="noreferrer"
             >
               <IconButton>
                 <LinkedInIcon />
@@ -57,9 +57,19 @@ const Home = () => {
               target="_blank"
               className=""
               href="https://github.com/RushiGhuge"
+              rel="noreferrer"
             >
               <IconButton>
                 <GitHubIcon />
+              </IconButton>
+            </a>
+            <a
+              target="_blank"
+              href="https://leetcode.com/u/rushikeshghuge993/"
+              rel="noreferrer"
+            >
+              <IconButton>
+                <SiLeetcode color="#36373b" size={22}/>
               </IconButton>
             </a>
           </motion.div>
@@ -96,7 +106,7 @@ const Home = () => {
               <img src={react} alt="" />
               <img src={angular} alt="" />
             </li>
-          
+
             <li>
               <img src={tailwind} alt="" />
               <img src={sass} alt="" />
