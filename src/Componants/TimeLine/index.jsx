@@ -65,7 +65,7 @@ export default function TimeLine() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "50px", px: 2 }}>
             <Typography variant="h6" component="span">
-              ISchoolConnect | FullStack Developer Intern
+              ISchoolConnect | Junior Software Engineer
             </Typography>
             <Typography>
               Building experience as a full-stack developer, mastering
