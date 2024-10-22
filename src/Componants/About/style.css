@@ -29,7 +29,7 @@
 .about-text p {
   margin-top: 20px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #aboutme {
@@ -37,8 +37,13 @@
   font-weight: bolder;
 }
 
+#head-ab {
+  color: var(--text);
+}
+
 .para-ab {
   text-align: justify;
+  color: var(--text1);
 }
 
 @media (max-width: 800px) {

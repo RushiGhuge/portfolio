@@ -15,6 +15,10 @@
     color: var(--text);
 }
 
+.h3{
+    color: var(--highlight);
+}
+
 @media(max-width:1000px) {
     .project-head {
         width: 100%;

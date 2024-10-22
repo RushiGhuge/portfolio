@@ -73,7 +73,7 @@ const ProjectContainer = () => {
     return (
         <section name="Project" className="projects-container">
             <div className="project-head">
-                <h3>PORTFOLIO</h3>
+                <h3 className='h3'>PORTFOLIO</h3>
                 <h1>Each project is a unique piece of development 🧩</h1>
             </div>
 
