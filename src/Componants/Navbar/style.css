@@ -37,12 +37,36 @@
   color: var(--text);
   font-weight: 600;
   padding: 30px 10px;
+  /* border-bottom: 2px solid red; */
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.1s;
 }
 
 .right-nav a:hover {
   color: var(--highlight);
   transition: 0.3s;
 }
+
+.right-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--highlight);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+  z-index: 1000;
+}
+
+.right-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .right-nav > button {
   background: transparent;
   border: none;
@@ -50,37 +74,7 @@
 }
 
 .active {
-  color: purple;
-}
-
-.hover-link {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 5px;
-  transition-duration: 0.1s;
-  background: red;
-}
-.hover-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  width: 100%;
-  height: 3px;
-  background-color: var(--shade-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-out;
-}
-
-.hover-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.hover-link:hover {
-  transition-duration: 0.1s;
-  color: var(--shade-color);
+  color: var(--text);
 }
 
 /* Add some styles to the scrollbar track */

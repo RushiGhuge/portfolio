@@ -73,7 +73,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     -webkit-animation: morfh 7s ease-in-out infinite;
     filter: grayscale(5%);
