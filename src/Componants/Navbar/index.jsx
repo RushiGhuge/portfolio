@@ -24,18 +24,21 @@ const ScrollButton = ({ target }) => (
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const lightTooltip = "Switch to Dark Theme";
+  const darkToolTip = "Switch to Light Theme";
+  const toolTip = theme === "light" ? lightTooltip : darkToolTip;
   return (
     <nav className="navbar">
       <div className="left-nav">
         <h2>Rushi.dev</h2>
       </div>
       <div className="right-nav">
-        <Tooltip title={theme} arrow>
+        <Tooltip title={toolTip} arrow>
           <IconButton onClick={toggleTheme}>
             {theme === "light" ? <DarkModeIcon /> : <WbSunnyIcon />}
           </IconButton>
         </Tooltip>
-        <button>
+        <button className="hover-link">
           <ScrollButton target="Home" />
         </button>
 

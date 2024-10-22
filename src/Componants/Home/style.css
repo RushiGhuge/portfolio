@@ -79,7 +79,9 @@
     filter: grayscale(5%);
 }
 
-
+.icon{
+    color:var(--text);
+}
 
 @-webkit-keyframes morfh {
     0% {

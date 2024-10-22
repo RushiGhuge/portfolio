@@ -15,6 +15,50 @@ import CreateIcon from "@mui/icons-material/Create";
 import "./style.css";
 import { useEffect, useState } from "react";
 
+const timelineData = [
+  {
+    date: "Feb 2025 - Now",
+    title: "ISchoolConnect | Junior Software Engineer",
+    description:
+      "Building experience as a full-stack developer, mastering technologies, including Angular, Nest.js, git",
+    icon: <LaptopMacIcon />,
+    dotColor: "secondary",
+    dotVariant: "outlined",
+  },
+  {
+    date: "2020 - 2023",
+    title: "Engineering (E&TC)",
+    description: "JSPM's Imperial College of Engineering and Research",
+    icon: <EngineeringIcon />,
+    dotColor: "primary",
+    dotVariant: "",
+  },
+  {
+    date: "2018 - 2020",
+    title: "Diploma | Electronics and Telecommunication",
+    description: "Government College of Aurangabad",
+    icon: <SchoolIcon />,
+    dotColor: "primary",
+    dotVariant: "outlined",
+  },
+  {
+    date: "2016 - 2018",
+    title: "12th",
+    description: "Shiv Chhatrapati College | Aurangabad",
+    icon: <SchoolIcon />,
+    dotColor: "primary",
+    dotVariant: "outlined",
+  },
+  {
+    date: "2015 - 2016",
+    title: "10th",
+    description: "Sushila Devi Deshmukh School | Aurangabad",
+    icon: <CreateIcon />,
+    dotColor: "secondary",
+    dotVariant: "outlined",
+  },
+];
+
 export default function TimeLine() {
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
@@ -45,129 +89,33 @@ export default function TimeLine() {
   return (
     <div className="timeline-container">
       <Timeline
-        position={`${innerWidth > 800 ? "alternate" : "right"}`}
+        position={`${window.innerWidth > 800 ? "alternate" : "right"}`}
         sx={alignTimeLine}
       >
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="var(--text)"
-          >
-            Feb 2024 - Now
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="secondary" variant="outlined">
-              <LaptopMacIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "50px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              ISchoolConnect | Junior Software Engineer
-            </Typography>
-            <Typography>
-              Building experience as a full-stack developer, mastering
-              technologies, including Angular, Nest.js, git
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="var(--text)"
-          >
-            2020 - 2023
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <EngineeringIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "50px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Engineering (E&TC)
-            </Typography>
-            <Typography>
-              JSPM's Imperial College of Engineering and Research,
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="var(--text)"
-          >
-            2018-2020
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary" variant="outlined">
-              <LaptopMacIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "50px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Diploma | Electronics and Telecommunication
-            </Typography>
-            <Typography>Government College of Aurangabad</Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="var(--text)"
-          >
-            2016-2018
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary" variant="outlined">
-              <SchoolIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "50px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              12th
-            </Typography>
-            <Typography>Shiv Chhatrapati College | Aurangabad</Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="var(--text)"
-          >
-            2015-2016
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-            <TimelineDot color="secondary" variant="outlined">
-              <CreateIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "50px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              10th
-            </Typography>
-            <Typography>Sushila Devi Deshmukh School | Aurangabad</Typography>
-          </TimelineContent>
-        </TimelineItem>
+        {timelineData.map((item, index) => (
+          <TimelineItem key={index}>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0", fontFamily: "Space Grotesk" }}
+              variant="body2"
+              color="var(--text)"
+            >
+              {item.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color={item.dotColor} variant={item.dotVariant}>
+                {item.icon}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "50px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                {item.title}
+              </Typography>
+              <Typography>{item.description}</Typography>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
       </Timeline>
     </div>
   );
