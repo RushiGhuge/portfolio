@@ -1,6 +1,7 @@
 import './App.css'
 import About from './Componants/About'
 import CopyRights from './Componants/CopyRights'
+import EmailPopup from './Componants/Email-popup'
 import Footer from './Componants/Footer'
 import Home from './Componants/Home'
 import Navbar from './Componants/Navbar'
@@ -21,6 +22,7 @@ function App() {
       <ProjectContainer />
       <Footer />
       <CopyRights />
+      <EmailPopup/>
     </main>
   )
 }

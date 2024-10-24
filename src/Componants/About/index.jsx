@@ -1,19 +1,32 @@
 import "./style.css";
 import about from "../../assets/img/about.jpg";
 import { AboutMeData } from "../../constants/constants";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <section name="About" id="aboutSec" className="about-section">
-      <div className="about-img">
+    <section tabIndex={0} name="About" id="aboutSec" className="about-section">
+      <motion.div
+        initial={{ opacity: 0.4, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 50}}
+        className="about-img"
+      >
         <img src={about} alt="" />
-      </div>
+      </motion.div>
 
-      <div className="about-text">
+      <motion.div
+        initial={{ opacity: 0.4, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 50}}
+        className="about-text"
+      >
         <h3 id="aboutme">ABOUT ME</h3>
         <h3 id="head-ab">{AboutMeData.title}</h3>
         <p className="para-ab">{AboutMeData.subTitle}</p>
-      </div>
+      </motion.div>
     </section>
   );
 }

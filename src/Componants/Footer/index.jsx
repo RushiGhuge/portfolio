@@ -30,7 +30,6 @@ const Footer = () => {
                         <p id="mail">
                             <span>rushimghuge@gmail.com</span>
                             <span>rushikeshghuge993@gmail.com</span>
-
                         </p>
                     </div>
                 </div>

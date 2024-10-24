@@ -6,6 +6,8 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { IconButton, Tooltip } from "@mui/material";
 import TemporaryDrawer from "../Drawer";
+import logo from "../../assets/logo/icons8-source-code-48.png";
+import { motion } from "framer-motion";
 
 const ScrollButton = ({ target }) => (
   <Link
@@ -29,16 +31,22 @@ const Navbar = () => {
   const toolTip = theme === "light" ? lightTooltip : darkToolTip;
   return (
     <nav className="navbar">
-      <div className="left-nav">
+      <motion.div
+        initial={{ x: -300 }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+        className="left-nav"
+      >
+        <img src={logo} alt="" />
         <h2>Rushi.dev</h2>
-      </div>
+      </motion.div>
       <div className="right-nav">
         <Tooltip title={toolTip} arrow>
           <IconButton onClick={toggleTheme}>
             {theme === "light" ? <DarkModeIcon /> : <WbSunnyIcon />}
           </IconButton>
         </Tooltip>
-        <button className="hover-link">
+        <button>
           <ScrollButton target="Home" />
         </button>
 

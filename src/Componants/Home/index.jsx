@@ -16,115 +16,115 @@ import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
   return (
-      <section name="Home" className="hero-container-main">
-        <div className="hero-main">
-          <div className="hero-text">
-            <header className="hero-heading">
-              <motion.h1
-                initial={{ x: -300 }}
-                animate={{ x: 0 }}
-                transition={{ type: "spring", stiffness: 100 }}
-                id="textColor"
-              >
-                Full Stack Developer <span id="hand-shake">👋</span>
-              </motion.h1>
-            </header>
-            <motion.p
-              initial={{ y: -300 }}
-              animate={{ y: 0 }}
-              transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-              className="ParaTxtColorDark"
+    <section name="Home" className="hero-container-main">
+      <div className="hero-main">
+        <div className="hero-text">
+          <header className="hero-heading">
+            <motion.h1
+              initial={{ x: -300 }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              id="textColor"
             >
-              Hi, I'm Rushikesh Ghuge. A passionate Front-end & Back-end
-              Developer. 📍
-            </motion.p>
-            <motion.div
-              initial={{ x: 300, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
-              className="share-icon"
-            >
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/rushikeshghuge/"
-                rel="noreferrer"
-              >
-                <IconButton>
-                  <LinkedInIcon />
-                </IconButton>
-              </a>
-              <a
-                target="_blank"
-                className=""
-                href="https://github.com/RushiGhuge"
-                rel="noreferrer"
-              >
-                <IconButton>
-                  <GitHubIcon />
-                </IconButton>
-              </a>
-              <a
-                target="_blank"
-                href="https://leetcode.com/u/rushikeshghuge993/"
-                rel="noreferrer"
-              >
-                <IconButton>
-                  <SiLeetcode className="icon" size={22}/>
-                </IconButton>
-              </a>
-            </motion.div>
-          </div>
-
-          <motion.div
-            initial={{ y: -300, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+              Full Stack Developer <span id="hand-shake">👋</span>
+            </motion.h1>
+          </header>
+          <motion.p
+            initial={{ y: -300 }}
+            animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-            className="hero-img"
-          ></motion.div>
+            className="ParaTxtColorDark"
+          >
+            Hi, I'm Rushikesh Ghuge. A passionate Front-end & Back-end
+            Developer. 📍
+          </motion.p>
+          <motion.div
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+            className="share-icon"
+          >
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/rushikeshghuge/"
+              rel="noreferrer"
+            >
+              <IconButton tabIndex={-1}>
+                <LinkedInIcon />
+              </IconButton>
+            </a>
+            <a
+              target="_blank"
+              className=""
+              href="https://github.com/RushiGhuge"
+              rel="noreferrer"
+            >
+              <IconButton tabIndex={-1}>
+                <GitHubIcon />
+              </IconButton>
+            </a>
+            <a
+              target="_blank"
+              href="https://leetcode.com/u/rushikeshghuge993/"
+              rel="noreferrer"
+            >
+              <IconButton tabIndex={-1}>
+                <SiLeetcode className="icon" size={22} />
+              </IconButton>
+            </a>
+          </motion.div>
         </div>
 
         <motion.div
-          initial={{ y: 300, opacity: 0 }}
+          initial={{ y: -300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
-          className="techStack"
-        >
-          <h3 className="ParaTxtColorDark">Tech Stack | </h3>
-          <div className="logos">
-            <ul>
-              <li>
-                <img src={html} alt="" />
-                <img src={css} alt="" />
-              </li>
+          transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+          className="hero-img"
+        ></motion.div>
+      </div>
 
-              <li>
-                <img src={js} alt="" />
-                <img src={ts} alt="" />
-              </li>
+      <motion.div
+        initial={{ y: 300, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+        className="techStack"
+      >
+        <h3 className="ParaTxtColorDark">Tech Stack | </h3>
+        <div className="logos">
+          <ul>
+            <li>
+              <img src={html} alt="" />
+              <img src={css} alt="" />
+            </li>
 
-              <li>
-                <img src={react} alt="" />
-                <img src={angular} alt="" />
-              </li>
+            <li>
+              <img src={js} alt="" />
+              <img src={ts} alt="" />
+            </li>
 
-              <li>
-                <img src={tailwind} alt="" />
-                <img src={sass} alt="" />
-              </li>
+            <li>
+              <img src={react} alt="" />
+              <img src={angular} alt="" />
+            </li>
 
-              <li>
-                <img src={node} alt="" />
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/nestjs.png"
-                  alt="nestjs"
-                />
-              </li>
-            </ul>
-          </div>
-        </motion.div>
-      </section>
+            <li>
+              <img src={tailwind} alt="" />
+              <img src={sass} alt="" />
+            </li>
+
+            <li>
+              <img src={node} alt="" />
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/nestjs.png"
+                alt="nestjs"
+              />
+            </li>
+          </ul>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 

@@ -14,6 +14,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import CreateIcon from "@mui/icons-material/Create";
 import "./style.css";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const timelineData = [
   {
@@ -87,13 +88,19 @@ export default function TimeLine() {
   }, []);
 
   return (
-    <div className="timeline-container">
+    <motion.div
+      initial={{ opacity: 0, y: 400 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className="timeline-container"
+    >
       <Timeline
         position={`${window.innerWidth > 800 ? "alternate" : "right"}`}
         sx={alignTimeLine}
       >
         {timelineData.map((item, index) => (
-          <TimelineItem key={index}>
+          <TimelineItem key={index}  tabIndex={0} >
             <TimelineOppositeContent
               sx={{ m: "auto 0", fontFamily: "Space Grotesk" }}
               variant="body2"
@@ -117,6 +124,6 @@ export default function TimeLine() {
           </TimelineItem>
         ))}
       </Timeline>
-    </div>
+    </motion.div>
   );
 }

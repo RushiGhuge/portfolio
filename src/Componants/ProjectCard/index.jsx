@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 const ProjectCard = ({ project }) => {
   return (
     <motion.div
-      initial={{ opacity: 0.4, x: -100 }}
+      tabIndex={0}
+      initial={{ opacity: 0.4, x: -500 }}
       whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className={`project-card odd ${project.id % 2 !== 0 && "project-left  "}`}
     >
       <div className="project-img">
@@ -32,7 +34,11 @@ const ProjectCard = ({ project }) => {
             Code
             <GitHubIcon />
           </a>
-          <a className="hover-effect" target="_blank" href={project.LiveDemoLink}>
+          <a
+            className="hover-effect"
+            target="_blank"
+            href={project.LiveDemoLink}
+          >
             Live Demo <LaunchIcon />
           </a>
         </div>

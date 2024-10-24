@@ -1,4 +1,4 @@
 export const AboutMeData = {
-  title : "A dedicated Full Stack Developer😎",
+  title : "A dedicated Full Stack Developer 😎",
   subTitle : "As a Full-Stack Developer, I bring a powerful combination of front-end and back-end expertise. With advanced skills in HTML, CSS, JavaScript, React, and Angular, I craft responsive and visually appealing websites that deliver a seamless user experience. On the back-end, I excel in building robust server-side applications using Node.js and NestJS, along with hands-on experience in working with MongoDB for database management. I am dedicated to writing clean, optimized code and leveraging modern development tools and techniques. A collaborative team player, I thrive in cross-functional environments, consistently delivering exceptional web applications from end to end."
 }
