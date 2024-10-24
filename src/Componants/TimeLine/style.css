@@ -10,4 +10,11 @@
 }
 .MuiTypography-root {
   font-family: "Space Grotesk", sans-serif !important;
+  font-size: 10px;
+}
+
+@media (max-width: 400px) {
+  .MuiTypography-root {
+    font-size: 0.9rem !important;
+  }
 }

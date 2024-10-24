@@ -13,7 +13,7 @@
   --bg2: #ffffff;
   --text: #36373b;
   --text2: #979797;
-  --highlight:  rgb(0, 102, 255);;
+  --highlight: rgb(0, 102, 255);
 }
 
 body[data-theme="light"] {
@@ -21,8 +21,7 @@ body[data-theme="light"] {
   --bg2: #ffffff;
   --text: #36373b;
   --text2: #979797;
-  --highlight:  rgb(0, 102, 255);
-
+  --highlight: rgb(0, 102, 255);
 }
 
 body[data-theme="dark"] {
@@ -30,7 +29,7 @@ body[data-theme="dark"] {
   --bg2: #141414;
   --text: #dfdfdf;
   --text2: #b9b9b9;
-  --highlight:  rgb(74, 147, 255);
+  --highlight: rgb(74, 147, 255);
 }
 
 a {
@@ -66,12 +65,12 @@ a {
   color: var(--shade-color);
 }
 
-.hover-effect{
+.hover-effect {
   border-radius: 1rem;
   padding: 4px 8px;
 }
 
-.hover-effect:hover{
+.hover-effect:hover {
   background: rgba(128, 128, 128, 0.137);
   transition: 0.3s;
 }

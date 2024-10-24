@@ -47,7 +47,7 @@ export default function EmailPopup() {
     if (!localStorage.getItem("isFeedbackSend")) {
       setTimeout(() => {
         handleOpen();
-      }, 12000);
+      }, 60000);
     }
   }, []);
 

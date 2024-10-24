@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   return (
     <motion.div
       tabIndex={0}
-      initial={{ opacity: 0.4, x: -500 }}
+      initial={{ opacity: 0.4, x: -200 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       className={`project-card odd ${project.id % 2 !== 0 && "project-left  "}`}

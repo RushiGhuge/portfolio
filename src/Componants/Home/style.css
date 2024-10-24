@@ -247,6 +247,9 @@
         width: 100%;
         text-align: center;
     }
+    .share-icon {
+        justify-content: center;
+    }
 }
 
 @media(max-width:400px) {

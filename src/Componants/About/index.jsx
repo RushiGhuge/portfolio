@@ -7,8 +7,8 @@ function About() {
   return (
     <section tabIndex={0} name="About" id="aboutSec" className="about-section">
       <motion.div
-        initial={{ opacity: 0.4, x: -300 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0.4, y: 100, }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ type: "spring", stiffness: 50}}
         className="about-img"
@@ -17,8 +17,8 @@ function About() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0.4, x: 300 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0.4, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ type: "spring", stiffness: 50}}
         className="about-text"
