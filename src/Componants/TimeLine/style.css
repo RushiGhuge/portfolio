@@ -1,10 +1,20 @@
-.timeline-container{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg);
-    color: var(--text);
-    padding: 4rem 0rem;
+.timeline-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  padding: 4rem 0rem;
+}
+.MuiTypography-root {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 10px;
+}
+
+@media (max-width: 400px) {
+  .MuiTypography-root {
+    font-size: 0.9rem !important;
+  }
 }

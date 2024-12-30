@@ -16,7 +16,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
   return (
-    <main name="Home" className="hero-container-main">
+    <section name="Home" className="hero-container-main">
       <div className="hero-main">
         <div className="hero-text">
           <header className="hero-heading">
@@ -49,7 +49,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/rushikeshghuge/"
               rel="noreferrer"
             >
-              <IconButton>
+              <IconButton tabIndex={-1}>
                 <LinkedInIcon />
               </IconButton>
             </a>
@@ -59,7 +59,7 @@ const Home = () => {
               href="https://github.com/RushiGhuge"
               rel="noreferrer"
             >
-              <IconButton>
+              <IconButton tabIndex={-1}>
                 <GitHubIcon />
               </IconButton>
             </a>
@@ -68,8 +68,8 @@ const Home = () => {
               href="https://leetcode.com/u/rushikeshghuge993/"
               rel="noreferrer"
             >
-              <IconButton>
-                <SiLeetcode color="#36373b" size={22}/>
+              <IconButton tabIndex={-1}>
+                <SiLeetcode className="icon" size={22} />
               </IconButton>
             </a>
           </motion.div>
@@ -121,85 +121,10 @@ const Home = () => {
                 alt="nestjs"
               />
             </li>
-
-            {/* <li>
-              <img
-                width="48"
-                height="48"
-                src="https://img.icons8.com/color/48/firebase.png"
-                alt="firebase"
-              />
-              <img
-                width="48"
-                height="48"
-                src="https://img.icons8.com/color/48/linux--v1.png"
-                alt="linux--v1"
-              />
-            </li>
-
-            <li>
-              <img
-                width="48"
-                height="48"
-                src="https://img.icons8.com/color/48/git.png"
-                alt="git"
-              />
-
-              <img
-                width="48"
-                height="48"
-                src="https://img.icons8.com/fluency/48/github.png"
-                alt="github"
-              />
-            </li> */}
           </ul>
         </div>
       </motion.div>
-
-      {/* absulute */}
-      <div className="techLogos-ab">
-        {/* {
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/tailwind_css.png"
-          alt="tailwind_css"
-        />
-       
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/fluency/48/node-js.png"
-          alt="node-js"
-        />  */}
-        {/* 
-         <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/redux.png"
-          alt="redux"
-        />
-
-        
-
-         <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/figma--v1.png"
-          alt="figma--v1"
-        />
-       
-
-      
-
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/visual-studio-code-2019.png"
-          alt="visual-studio-code-2019"
-        /> */}
-      </div>
-    </main>
+    </section>
   );
 };
 
