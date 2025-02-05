@@ -38,7 +38,7 @@ const Navbar = () => {
         className="left-nav"
       >
         <img src={logo} alt="" />
-        <h2>Rushi.dev</h2>
+        <h2>Rushighuge.in</h2>
       </motion.div>
       <div className="right-nav">
         <Tooltip title={toolTip} arrow>
