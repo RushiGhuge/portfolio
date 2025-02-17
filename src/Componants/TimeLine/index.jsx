@@ -100,7 +100,7 @@ export default function TimeLine() {
         sx={alignTimeLine}
       >
         {timelineData.map((item, index) => (
-          <TimelineItem key={index}  tabIndex={0} >
+          <TimelineItem key={index} tabIndex={0}>
             <TimelineOppositeContent
               sx={{ m: "auto 0", fontFamily: "Space Grotesk" }}
               variant="body2"

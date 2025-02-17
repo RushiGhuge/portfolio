@@ -65,7 +65,7 @@ const Navbar = () => {
         <a
           className="resume"
           target="_blank"
-          href="https://drive.google.com/file/d/1Vo1TWAd1tMOO_xzGd0rJJgnDFl7MTJZ8/view"
+          href="/public/Rushikesh_Ghuge_Resume.pdf"
           rel="noreferrer"
         >
           Resume
