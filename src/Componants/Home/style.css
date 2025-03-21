@@ -63,23 +63,27 @@
 
 .ParaTxtColorDark {
     color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .hero-img {
     width: 22rem;
     height: 22rem;
     background: #BDB9B6;
-    background-image: url(../../assets/img/pro2.png);
+    background-image: url(../../../public/profile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     -webkit-animation: morfh 7s ease-in-out infinite;
     filter: grayscale(5%);
 }
 
-
+.icon{
+    color:var(--text);
+}
 
 @-webkit-keyframes morfh {
     0% {
@@ -244,6 +248,9 @@
         max-width: 400px;
         width: 100%;
         text-align: center;
+    }
+    .share-icon {
+        justify-content: center;
     }
 }
 

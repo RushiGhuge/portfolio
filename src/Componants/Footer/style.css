@@ -53,6 +53,11 @@
     color: black !important;
 }
 
+#mail{
+    display: flex;
+    flex-direction: column;
+}
+
 @media(max-width:900px) {
     #footer {
         width: 100%;

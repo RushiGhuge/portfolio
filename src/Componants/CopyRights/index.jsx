@@ -7,7 +7,7 @@ import { IconButton } from '@mui/material';
 const CopyRights = () => {
     return (
         <div className="copy-right-section">
-            <h3>Copyright © 2024. All rights are reserved</h3>
+            <h3>Copyright © 2025. All rights are reserved</h3>
 
             <div className="share-icon">
                 <a target="_blank" href="https://www.linkedin.com/in/rushikeshghuge/">
