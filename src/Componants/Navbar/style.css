@@ -88,6 +88,10 @@
   color: var(--text);
 }
 
+.main-link{
+  cursor: pointer;
+}
+
 /* Add some styles to the scrollbar track */
 ::-webkit-scrollbar {
   width: 10px;

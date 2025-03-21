@@ -63,13 +63,15 @@
 
 .ParaTxtColorDark {
     color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .hero-img {
     width: 22rem;
     height: 22rem;
     background: #BDB9B6;
-    background-image: url(../../assets/img/pro2.png);
+    background-image: url(../../../public/profile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

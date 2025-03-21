@@ -37,8 +37,8 @@ const Navbar = () => {
         transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
         className="left-nav"
       >
-        <img src={logo} alt="" />
-        <h2>Rushighuge.in</h2>
+        <img src={logo} alt="logo" />
+        <h1 className="main-link"><a href="/">Rushighuge.in</a></h1>
       </motion.div>
       <div className="right-nav">
         <Tooltip title={toolTip} arrow>

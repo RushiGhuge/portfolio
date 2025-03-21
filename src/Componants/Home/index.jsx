@@ -29,7 +29,7 @@ const Home = () => {
               Full Stack Developer <span id="hand-shake">👋</span>
             </motion.h1>
           </header>
-          <motion.p
+          <motion.h2
             initial={{ y: -300 }}
             animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
@@ -37,7 +37,7 @@ const Home = () => {
           >
             Hi, I'm Rushikesh Ghuge. A passionate Front-end & Back-end
             Developer. 📍
-          </motion.p>
+          </motion.h2>
           <motion.div
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -93,27 +93,27 @@ const Home = () => {
         <div className="logos">
           <ul>
             <li>
-              <img src={html} alt="" />
-              <img src={css} alt="" />
+              <img src={html} alt="html" />
+              <img src={css} alt="css" />
             </li>
 
             <li>
-              <img src={js} alt="" />
-              <img src={ts} alt="" />
+              <img src={js} alt="js" />
+              <img src={ts} alt="ts" />
             </li>
 
             <li>
-              <img src={react} alt="" />
-              <img src={angular} alt="" />
+              <img src={react} alt="react" />
+              <img src={angular} alt="angular" />
             </li>
 
             <li>
-              <img src={tailwind} alt="" />
-              <img src={sass} alt="" />
+              <img src={tailwind} alt="tailwind" />
+              <img src={sass} alt="sass" />
             </li>
 
             <li>
-              <img src={node} alt="" />
+              <img src={node} alt="node" />
               <img
                 width="48"
                 height="48"

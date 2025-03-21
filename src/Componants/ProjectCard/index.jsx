@@ -13,13 +13,11 @@ const ProjectCard = ({ project }) => {
       className={`project-card odd ${project.id % 2 !== 0 && "project-left  "}`}
     >
       <div className="project-img">
-        <img src={project.img} alt="" />
+        <img src={project.img} alt={project.heading} />
       </div>
 
       <div className="project-content">
-        <h2 id="youtube">
-          {project.heading} <img src="" alt="" />
-        </h2>
+        <h2 id="youtube">{project.heading}</h2>
 
         <p>{project.des} </p>
 

@@ -13,7 +13,7 @@ function About() {
         transition={{ type: "spring", stiffness: 50}}
         className="about-img"
       >
-        <img src={about} alt="" />
+        <img src={about} alt="Rushikesh Ghuge Portfolio About page" />
       </motion.div>
 
       <motion.div
