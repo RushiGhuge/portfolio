@@ -14,7 +14,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
 import { SiLeetcode } from "react-icons/si";
 
-// this is an home component!
+// this is an home component! i am rushikesh ghuge
 const Home = () => {
   return (
     <section name="Home" className="hero-container-main">
