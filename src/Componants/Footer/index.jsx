@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                     <div className="rows">
                         <h3>Location</h3>
-                        <p>Pune, India</p>
+                        <p>Mumbai, India</p>
                     </div>
                 </div>
 
@@ -27,7 +27,10 @@ const Footer = () => {
                     </div>
                     <div className="rows">
                         <h3>Mail</h3>
-                        <p id="mail">rushimghuge@gmail.com</p>
+                        <p id="mail">
+                            <span>rushimghuge@gmail.com</span>
+                            <span>rushikeshghuge993@gmail.com</span>
+                        </p>
                     </div>
                 </div>
 
